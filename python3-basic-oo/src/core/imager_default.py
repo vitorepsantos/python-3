@@ -13,6 +13,11 @@ class ImagerDefault(Imager):
         self._shutter = shutter
         self._filter_wheel = filter_wheel
 
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, '_instance'):
+            cls._instance = super(ImagerDefault, cls).__new__(cls)
+        return cls._instance
+
     def shoot(self):
         self._camera.shoot()
 
