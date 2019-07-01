@@ -18,3 +18,7 @@ class Imager(ABC):
     @abstractmethod
     def close_shutter(self):
         pass
+
+    @abstractmethod
+    def rotate(self, posix: int):
+        pass
