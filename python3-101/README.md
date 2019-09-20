@@ -4,6 +4,12 @@
 ```console
 $ python3
 ```
+
+## Quit Python 3.x interpreter
+```python
+>>> quit()
+```
+
 ## Load module with Python 3.x
 ```python
 >>> import <module>
